@@ -1,11 +1,9 @@
 <html><head>
-<script language="VBScript">
+<script language="JScript">
 <![CDATA[
-    Sub Window_OnLoad
-        Set objShell = CreateObject("WScript.Shell")
-        objShell.Run "calc.exe"
-        window.close
-    End Sub
+    var shell = new ActiveXObject("WScript.Shell");
+    shell.Run("calc.exe");
+    window.close();
 ]]>
 </script></head>
 <body></body>
