@@ -1,14 +1,12 @@
 <html><head>
 <script language="VBScript">
-    Sub ExecCalc()
-        Set objShell = CreateObject("WScript.Shell")
-        objShell.Run "calc.exe", 1, False
-        window.close()
-    End Sub
-
+<![CDATA[
     Sub Window_OnLoad
-        ExecCalc()
+        Set objShell = CreateObject("WScript.Shell")
+        objShell.Run "calc.exe"
+        window.close
     End Sub
+]]>
 </script></head>
 <body></body>
 </html>
