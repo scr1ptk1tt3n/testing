@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<package>
+<component id="testCalc">
+
+<script language="VBScript">
+<![CDATA[
+Dim shell
+Set shell = CreateObject("WScript.Shell")
+shell.Run "calc.exe"
+]]>
+</script>
+
+</component>
+</package>
