@@ -1,0 +1,8 @@
+<html>
+<body>
+  <script>
+    alert("w0rks!");
+    window.close();
+  </script>
+</body>
+</html>
