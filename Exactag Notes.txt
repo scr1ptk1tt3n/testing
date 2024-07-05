@@ -1,0 +1,55 @@
+Google Search: "xml" "exactag.com"
+
+https://www.joesandbox.com/analysis/1465947/0/html (Submitted 02/07/2024)
+- tc=d9608989bc40b07205bbd26a23a8d2e6b6b4f9 (tracking-cookie hash #1)
+- alec.peterson@vossloh.com
+- http://ABOJ.jaick.co.ke/index.xml#?email=m30w@purr.cat	- ACTIVE
+- https://aviationsecurity.msk.su/RWcwP/
+
+
+https://www.joesandbox.com/analysis/1466035/0/html (Submitted 02/07/2024)
+- tc=d9608989bc40b07205bbd26a23a8d2e6b6b4f9 (tracking-cookie hash #1)
+- oliver.schuster@vossloh.com
+- http://APGI.medamax.com.ar/index.xml#?email=m30w@purr.cat	- ACTIVE
+- https://bepurchasepro.ru/HFXgp/
+
+
+https://urlscan.io/result/7276b154-517b-4d41-9e38-66f6a78f7d13/#summary
+
+
+https://urlscan.io/result/70b53876-0012-4a9e-96f7-dc275bfae4d3/ (Submitted 07/04/2024) 
+- tc=d9160286bc40b07205bbd26a23a8d2e6b6b4f9 (tracking-cookie hash #2)
+- stefan.maegli@ceposa.com
+- http://AW8I.ads.ba/index.xml#?email=m30w@purr.cat	- ACTIVE
+- https://bepurchasepro.ru/HFXgp/
+
+
+Google Search: "xml" "exactag.com/ai.aspx"
+
+
+https://hybrid-analysis.com/sample/8eeb1a576e58d5dc9d29efbdae266e80396d6fa4c3c94982cef4476f25796847/6685600724fa5c24b7071606 (Submitted 07/03/2024) - Removed Padding
+- tc=d9160286bc40b07205bbd26a23a8d2e6b6b4f9 (tracking-cookie hash #2)
+- alan@macrogenics.com
+- http://ATJS.eplannercoach.com/index.xml#?email=m30w@purr.cat	- ACTIVE
+- https://ngncore.net/404.html
+
+
+https://hybrid-analysis.com/sample/300e7d0127b73c0af0679056e4a4419752dc33e942785200f72029bb29d25896/66845987a611ea82dc05f560 (Submitted 07/02/2024) - Removed Padding Sanitized
+- tc=d9608989bc40b07205bbd26a23a8d2e6b6b4f9 (tracking-cookie hash #1)
+- abc@123.c?
+- http://AU7Q.chinabar.lk/index.xml#?email=m30w@purr.cat 	- ACTIVE
+- https://albertdedden.com/4041.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
