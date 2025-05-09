@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<package>
+<component id="DropFiles">
+
+<script language="VBScript">
+<![CDATA[
+Dim fso, shell, folder, targetFolder, dropPath
+Set fso = CreateObject("Scripting.FileSystemObject")
+Set shell = CreateObject("WScript.Shell")
+
+' Try to use the current directory
+folder = fso.GetAbsolutePathName(".")
+
+On Error Resume Next
+dropPath = folder
+If Not fso.FolderExists(dropPath) Then
+    dropPath = shell.ExpandEnvironmentStrings("%TEMP%") & "\m30w_drop"
+    If Not fso.FolderExists(dropPath) Then
+        fso.CreateFolder dropPath
+    End If
+End If
+On Error GoTo 0
+
+' Define the EICAR content
+eicar = "X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*"
+
+' Drop the 3 files
+DropFile "m30w.cat", eicar
+DropFile "litt3r.bin", eicar
+DropFile "CuteKittenPics.com", eicar
+
+' Open the drop folder if it's not the original working dir
+If LCase(dropPath) <> LCase(folder) Then
+    shell.Run "explorer.exe """ & dropPath & """", 1, False
+End If
+
+Sub DropFile(fileName, content)
+    Dim fullPath, fh
+    fullPath = dropPath & "\" & fileName
+    Set fh = fso.CreateTextFile(fullPath, True)
+    fh.Write content
+    fh.Close
+End Sub
+]]>
+</script>
+
+</component>
+</package>
