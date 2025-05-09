@@ -1,31 +1,14 @@
 <?XML version="1.0"?>
 <scriptlet>
 <registration 
-    progid="EicarDropperScriptlet"
+    progid="EicarViaPowerShell"
     classid="{F0001111-0000-0000-0000-0000FEEDACDC}">
 <script language="JScript">
 <![CDATA[
     function RunPayload() {
-        var fso = new ActiveXObject("Scripting.FileSystemObject");
         var shell = new ActiveXObject("WScript.Shell");
-        var temp = shell.ExpandEnvironmentStrings("%TEMP%");
-        var subfolder = fso.BuildPath(temp, "m30w_drop");
-
-        if (!fso.FolderExists(subfolder)) {
-            fso.CreateFolder(subfolder);
-        }
-
-        var eicar = "X5O!P%@AP[4\\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*";
-        var files = ["m30w.cat", "litt3r.bin", "foo.bar", "MyCatPics.com"];
-
-        for (var i = 0; i < files.length; i++) {
-            var path = fso.BuildPath(subfolder, files[i]);
-            var fh = fso.CreateTextFile(path, true);
-            fh.Write(eicar);
-            fh.Close();
-        }
-
-        shell.Run("explorer.exe \"" + subfolder + "\"");
+        var cmd = 'powershell -NoP -W Hidden -C "$p=Join-Path $env:TEMP ''m30w_drop'';mkdir $p -ea 0;\\\"X5O!P%@AP[4\\\\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*\\\"|Out-File (Join-Path $p ''m30w.cat'');\\\"$($_|Out-File)\\\"|Out-File (Join-Path $p ''scan.com'');start explorer $p"';
+        shell.Run(cmd, 0, false);
     }
 ]]>
 </script>
