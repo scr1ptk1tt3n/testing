@@ -7,17 +7,24 @@
 <![CDATA[
     var fso = new ActiveXObject("Scripting.FileSystemObject");
     var shell = new ActiveXObject("WScript.Shell");
-    var folder = fso.GetAbsolutePathName(".");
-    var eicar = "X5O!P%@AP[4\\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*";
+    var temp = shell.ExpandEnvironmentStrings("%TEMP%");
+    var subfolder = fso.BuildPath(temp, "m30w_drop");
 
-    var files = ["m30w.cat", "foo.bar", "litt3r.bin", "TotesCatPics.com"];
+    if (!fso.FolderExists(subfolder)) {
+        fso.CreateFolder(subfolder);
+    }
+
+    var eicar = "X5O!P%@AP[4\\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*";
+    var files = ["m30w.cat", "litt3r.bin", "foo.bar", "MyCatPics.com"];
 
     for (var i = 0; i < files.length; i++) {
-        var path = fso.BuildPath(folder, files[i]);
+        var path = fso.BuildPath(subfolder, files[i]);
         var fh = fso.CreateTextFile(path, true);
         fh.Write(eicar);
         fh.Close();
     }
+
+    shell.Run("explorer.exe \"" + subfolder + "\"");
 ]]>
 </script>
 </registration>
